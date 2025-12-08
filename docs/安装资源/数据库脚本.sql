@@ -773,16 +773,16 @@ CREATE TABLE `sys_depart` (
 -- Records of sys_depart
 -- ----------------------------
 BEGIN;
-INSERT INTO `sys_depart` (`id`, `dept_type`, `parent_id`, `dept_name`, `dept_code`, `sort`) VALUES ('1302853644578000898', 1, '0', '北京云帆互联科技有限公司', 'A01', 1);
-INSERT INTO `sys_depart` (`id`, `dept_type`, `parent_id`, `dept_name`, `dept_code`, `sort`) VALUES ('1302855940200284161', 1, '1302855776496599041', '后端组', 'A01A01A01', 2);
-INSERT INTO `sys_depart` (`id`, `dept_type`, `parent_id`, `dept_name`, `dept_code`, `sort`) VALUES ('1302855994843676674', 1, '1302855776496599041', '前端组', 'A01A01A02', 1);
-INSERT INTO `sys_depart` (`id`, `dept_type`, `parent_id`, `dept_name`, `dept_code`, `sort`) VALUES ('1302856017283203073', 1, '1302855776496599041', '产品组', 'A01A01A03', 3);
-INSERT INTO `sys_depart` (`id`, `dept_type`, `parent_id`, `dept_name`, `dept_code`, `sort`) VALUES ('1302856084475953154', 1, '1302855776496599041', '测试组', 'A01A01A05', 5);
-INSERT INTO `sys_depart` (`id`, `dept_type`, `parent_id`, `dept_name`, `dept_code`, `sort`) VALUES ('1302856266567467010', 1, '1302855896415944705', '客户一组', 'A01A05A01', 1);
-INSERT INTO `sys_depart` (`id`, `dept_type`, `parent_id`, `dept_name`, `dept_code`, `sort`) VALUES ('1302856320602685442', 1, '1302855896415944705', '客服二组', 'A01A05A02', 2);
-INSERT INTO `sys_depart` (`id`, `dept_type`, `parent_id`, `dept_name`, `dept_code`, `sort`) VALUES ('1318103313740320770', 1, '1302853644578000898', '技术部', 'A01A01', 1);
-INSERT INTO `sys_depart` (`id`, `dept_type`, `parent_id`, `dept_name`, `dept_code`, `sort`) VALUES ('1318103339229106178', 1, '1302853644578000898', '人事部', 'A01A02', 2);
-INSERT INTO `sys_depart` (`id`, `dept_type`, `parent_id`, `dept_name`, `dept_code`, `sort`) VALUES ('1318103362494910465', 1, '1302853644578000898', '财务部', 'A01A03', 3);
+INSERT INTO `sys_depart` (`id`, `dept_type`, `parent_id`, `dept_name`, `dept_code`, `sort`) VALUES ('1302853644578000898', 1, '0', '中国科学技术大学', 'A01', 1);
+INSERT INTO `sys_depart` (`id`, `dept_type`, `parent_id`, `dept_name`, `dept_code`, `sort`) VALUES ('1302855940200284161', 1, '1302855776496599041', '先研院', 'A01A01A01', 2);
+INSERT INTO `sys_depart` (`id`, `dept_type`, `parent_id`, `dept_name`, `dept_code`, `sort`) VALUES ('1302855994843676674', 1, '1302855776496599041', '自动化系', 'A01A01A02', 1);
+INSERT INTO `sys_depart` (`id`, `dept_type`, `parent_id`, `dept_name`, `dept_code`, `sort`) VALUES ('1302856017283203073', 1, '1302855776496599041', '电子系', 'A01A01A03', 3);
+INSERT INTO `sys_depart` (`id`, `dept_type`, `parent_id`, `dept_name`, `dept_code`, `sort`) VALUES ('1302856084475953154', 1, '1302855776496599041', '计算机系', 'A01A01A05', 5);
+INSERT INTO `sys_depart` (`id`, `dept_type`, `parent_id`, `dept_name`, `dept_code`, `sort`) VALUES ('1302856266567467010', 1, '1302855896415944705', '化学系', 'A01A05A01', 1);
+INSERT INTO `sys_depart` (`id`, `dept_type`, `parent_id`, `dept_name`, `dept_code`, `sort`) VALUES ('1302856320602685442', 1, '1302855896415944705', '环境系', 'A01A05A02', 2);
+INSERT INTO `sys_depart` (`id`, `dept_type`, `parent_id`, `dept_name`, `dept_code`, `sort`) VALUES ('1318103313740320770', 1, '1302853644578000898', '材料系', 'A01A01', 1);
+INSERT INTO `sys_depart` (`id`, `dept_type`, `parent_id`, `dept_name`, `dept_code`, `sort`) VALUES ('1318103339229106178', 1, '1302853644578000898', '工程科学系', 'A01A02', 2);
+INSERT INTO `sys_depart` (`id`, `dept_type`, `parent_id`, `dept_name`, `dept_code`, `sort`) VALUES ('1318103362494910465', 1, '1302853644578000898', '教职工部', 'A01A03', 3);
 COMMIT;
 
 -- ----------------------------
