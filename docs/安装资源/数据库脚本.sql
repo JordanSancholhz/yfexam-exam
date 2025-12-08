@@ -18,6 +18,12 @@ SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
+-- 新增：创建数据库 ustc_exam
+-- ----------------------------
+CREATE DATABASE IF NOT EXISTS `ustc_exam` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `ustc_exam`;  -- 切换到新数据库
+
+-- ----------------------------
 -- Table structure for el_exam
 -- ----------------------------
 DROP TABLE IF EXISTS `el_exam`;
@@ -746,7 +752,7 @@ CREATE TABLE `sys_config` (
 -- Records of sys_config
 -- ----------------------------
 BEGIN;
-INSERT INTO `sys_config` (`id`, `site_name`, `front_logo`, `back_logo`, `copy_right`, `create_time`, `update_time`, `create_by`, `update_by`, `data_flag`) VALUES ('1', '云帆在线培训考试系统', NULL, NULL, NULL, '2020-12-03 16:51:30', '2020-12-03 16:51:30', '', '', 1);
+INSERT INTO `sys_config` (`id`, `site_name`, `front_logo`, `back_logo`, `copy_right`, `create_time`, `update_time`, `create_by`, `update_by`, `data_flag`) VALUES ('1', 'USTC在线考试系统', NULL, NULL, NULL, '2020-12-03 16:51:30', '2020-12-03 16:51:30', '', '', 1);
 COMMIT;
 
 -- ----------------------------
