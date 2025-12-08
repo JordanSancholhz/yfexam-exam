@@ -5,13 +5,14 @@
         <el-card class="box">
           <div slot="header" class="clearfix">
             <span>项目信息</span>
-            <el-button style="float: right; padding: 3px 0; font-size: 12px" type="text">系统版本：{{ version }}</el-button>
+            <el-button style="float: right; padding: 3px 0; font-size: 12px" type="text"
+              >系统版本：{{ version }}</el-button
+            >
           </div>
 
-          <div style="line-height: 32px;">
-
+          <div style="line-height: 32px">
             <div class="title" style="padding-top: 0px">系统介绍</div>
-            云帆考试系统是一款基于SpringBoot+Vue开发的考试系统。包含在线考试、用户体系、错题训练、考试规则、智能算分等考试功能，流程通畅。
+            USTC在线考试系统是一款基于SpringBoot+Vue开发的考试系统。该项目包含在线考试、用户体系、错题训练、考试规则、智能算分等考试功能，流程通畅。
 
             <div class="title">技术栈</div>
             <div class="tags">
@@ -34,86 +35,97 @@
               <div>考试权限：支持指定考试范围：完全公开、指定某些部门人员考试</div>
               <div>在线考试：学员在线考试、查看分数、考试错题训练。</div>
             </div>
-
           </div>
-
+          <div class="title">团队信息</div>
+          <div>
+            <el-row>
+              <el-col :span="12">刘畅 SA25218112</el-col>
+              <el-col :span="12">林晖祖 SA25218110</el-col>
+              <el-col :span="12">高宇轩 SA25218104</el-col>
+              <el-col :span="12">刘雨桐 SA25218167</el-col>
+              <el-col :span="12">曾经纬 SA25218130</el-col>
+              <el-col :span="12">张远卓 SA25218128</el-col>
+              <el-col :span="12">黄胤臻 SA25218106</el-col>
+              <el-col :span="12">刘擎 SA25218165</el-col>
+            </el-row>
+          </div>
         </el-card>
       </el-col>
       <el-col :span="8">
-
         <el-card class="box">
           <div slot="header" class="clearfix">
-            <span>支持信息</span>
+            <span>维护信息</span>
           </div>
 
           <div>
-
-            <div class="title" style="padding-top: 0px">商业咨询</div>
-            <div style="display: flex;">
-              <div style="flex-grow: 1;">
-                <div>微信：gyh_yinzi（微信号）或搜索手机18603038204</div>
-                <div>手机：<a href="tel:18603038204">18603038204（郭女士）</a></div>
-                <div>邮箱：<a href="mailto:835487894@qq.com">835487894@qq.com</a> </div>
-              </div>
-              <div style="width: 120px; display: flex; align-items: center; flex-direction: column; align-content: flex-end">
-                <img style="width: 100px; height: 100px" src="@/assets/contact.png" >
-                <div style="font-size: 12px; text-align: center; width: 100%">微信扫码加我好友</div>
+            <div style="text-align: center; margin-top: 10px; margin-bottom: 20px">
+              <img src="@/assets/image.png" style="width: 360px; height: auto" />
+            </div>
+            <div class="title" style="padding-top: 0px">联系我们</div>
+            <div style="line-height: 28px">
+              <div style="margin-bottom: 10px">
+                <i class="el-icon-user" style="margin-right: 5px"></i>
+                <span style="font-weight: bold">维护人员：</span>
+                <span>刘畅 林晖祖 高宇轩 刘雨桐 曾经纬 张远卓 黄胤臻 刘擎</span>
               </div>
 
+              <div style="margin-bottom: 10px">
+                <i class="el-icon-mobile-phone" style="margin-right: 5px"></i>
+                <span style="font-weight: bold">联系电话：</span>
+                <span>123-1234-1234</span>
+              </div>
+
+              <div style="margin-bottom: 10px">
+                <i class="el-icon-message" style="margin-right: 5px"></i>
+                <span style="font-weight: bold">电子邮箱：</span>
+                <a href="mailto:support@example.com">support@mail.ustc.edu.cn</a>
+              </div>
+
+              <div style="margin-bottom: 10px">
+                <i class="el-icon-location-outline" style="margin-right: 5px"></i>
+                <span style="font-weight: bold">联系地址：</span>
+                <span>安徽省合肥市蜀山区高新区复兴路100号</span>
+              </div>
             </div>
 
-            <div class="title">支持网站</div>
+            <div class="title">工作时间</div>
             <div>
-              <div>企业官网：<a href="https://www.yfhl.net" target="_blank">https://www.yfhl.net</a></div>
-              <div>在线试用：<a href="https://exam.yfhl.net" target="_blank">https://exam.yfhl.net</a></div>
+              <div>周一至周五：09:00 - 18:00</div>
+              <div>周六至周日：如有紧急情况请拨打手机</div>
             </div>
-
-            <div class="title">在线试用</div>
-            <div style="display: flex; align-items: center">
-              <img src="@/assets/h5.png" style="width: 150px; height: 150px; border: #efefef 1px solid">
-              <img src="@/assets/mp.jpg" style="width: 150px; height: 150px; border: #efefef 1px solid; margin-left: 20px">
-            </div>
-
           </div>
-
         </el-card>
-
       </el-col>
     </el-row>
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-import config from '../../../package.json'
+import { mapGetters } from "vuex";
+import config from "../../../package.json";
 
 export default {
-  name: 'Dashboard',
+  name: "Dashboard",
   data() {
     return {
-      currentRole: 'adminDashboard',
-      version: config.version
-    }
+      currentRole: "adminDashboard",
+      version: config.version,
+    };
   },
   computed: {
-    ...mapGetters([
-      'roles',
-      'siteData'
-    ])
+    ...mapGetters(["roles", "siteData"]),
   },
-  created() {
-
-  }
-}
+  created() {},
+};
 </script>
 
 <style scoped>
-.box{
+.box {
   height: calc(100vh - 120px);
   font-size: 14px;
   line-height: 28px;
 }
-.title{
+.title {
   font-size: 18px;
   font-weight: 700;
   padding-bottom: 10px;
@@ -122,15 +134,15 @@ export default {
   border-bottom: #eee 1px dotted;
 }
 
-.tags span{
+.tags span {
   margin-right: 10px;
 }
 
-.box a{
+.box a {
   color: #20a0ff;
 }
 
-.box a:hover{
+.box a:hover {
   color: #ff0000;
 }
 </style>
